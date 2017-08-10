@@ -1,0 +1,31 @@
+
+  //没有兼容性问题：
+  //indexOf() lastIndexOf()
+  
+  //大小写转换方法:
+  //toUpperCase()  转换为大写
+  //toLowerCase()  转换为小写
+  //var str = "abcdefg";
+  //console.log(str.toUpperCase());
+  //var str2 = "ABCDEFG";
+  //console.log(str2.toLowerCase());
+  
+  //替换方法：
+  //字符串.replace(要替换的部分,要替换为什么字符串)
+//  var str = "abcadeafag";
+  //console.log(str.replace("bc", "zzz"));
+  
+  //替换时只能从左往右替换找到的第一个满足条件的部分
+  //  str = str.replace("a", "z");
+  //  str = str.replace("a", "z");
+  //  str = str.replace("a", "z");
+  //  str = str.replace("a", "z");
+  //  console.log(str);
+  
+//  while (str.indexOf("a") != -1) {//执行次数不定，使用while循环
+//    str = str.replace("a", "z");
+//  }
+//  console.log(str);
+
+    var str = "abcadeafag";
+  console.log(str.split("a").join("z"));

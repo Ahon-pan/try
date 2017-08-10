@@ -1,0 +1,13 @@
+split() 方法用于把一个字符串分割成字符串数组。
+join() 方法用于把数组中的所有元素放入一个字符串。
+  //字符串.split(字符串)  返回数组形式的结果
+  var str = "a-b-c-d-e-f";
+  //console.log(str.split("-"));
+  
+  //split和数组的join方法为一组，可以进行相互转换。
+  
+  //去除字符串中的某些字符：
+  //console.log(str.split("-").join(""));
+  
+  //将某些字符替换为另外一些字符：
+  console.log(str.split("-").join("!"));
